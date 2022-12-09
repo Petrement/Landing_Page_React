@@ -1,38 +1,34 @@
 import React from "react";
+import Logo from "../../img/Logo.jpg";
 
-
-const Navbar = () => {
-	return (
-		<div className="text-center">
-      <nav className="navbar navbar-expand-lg navbar-dark bg-dark fs-5">
-        <div className="container-fluid">
-          <a className="navbar-brand" href="#">
-            <img src="https://upload.wikimedia.org/wikipedia/en/b/b8/One_Don_Music_Logo.jpg" alt="Logo" width="50" height="50" className="rounded-circle"/>
-            <span className="p-3 fs-5 t-4"><strong>ONE DOM</strong>Music</span>
-          </a>
-          <button className="navbar-toggler btn-close-white" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
-            <span className="navbar-toggler-icon"></span>
-          </button>
-          <div className="collapse navbar-collapse justify-content-end" id="navbarTogglerDemo01">
-            <ul className="navbar-nav mb-2 mb-lg-0">
-              <li className="nav-item">
-                <a className="nav-link active" aria-current="page" href="#">Home</a>
-              </li>
-              <li className="nav-item">
-                <a className="nav-link" href="#">Now Playing</a>
-              </li>
-              <li className="nav-item">
-                <a className="nav-link" href="#">Concerts</a>
-              </li>
-              <li className="nav-item">
-                <a className="nav-link">Upcoming</a>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </nav>
-		</div>
-	);
+const NavBar = () => {
+    return (
+        <nav className="navbar navbar-expand-lg navbar navbar-dark bg-dark">
+             <img src={Logo} alt="Logo" width="80" height="80" className="rounded-circle logogb d-inline-block align-text-top"/>
+             <a className="navbar-brand" name="main" href="#main">MusicSpectrum</a>               
+                <div className="collapse navbar-collapse" id="navbarTogglerDemo03">
+                    <ul className="navbar-nav ms-auto mb-2 mb-lg-0">
+                        <li className="nav-item active">
+                            <a className="nav-link" href="#main">Home <span className="sr-only">(current)</span></a>
+                        </li>
+                        <li className="nav-item">
+                            <a className="nav-link" target="_blank"href="https://www.youtube.com/watch?v=dj_OK0IwVZU">EDM</a>
+                        </li>
+                        <li className="nav-item">
+                            <a className="nav-link" target="_blank" href="https://www.youtube.com/watch?v=-gjiT_WLzXo">Indie</a>
+                        </li>
+                        <li className="nav-item">
+                            <a className="nav-link" target="_blank" href="https://www.youtube.com/watch?v=STyKwHUhytA">PopRock</a>
+                        </li>
+                        <li className="nav-item">
+                            <a className="nav-link" target="_blank" href="https://www.youtube.com/watch?v=sjrcO6FWzdE&t=147s">Festival</a>
+                        </li>
+                    </ul>
+              </div>
+        </nav>
+        );
 };
 
-export default Navbar;
+
+
+export default NavBar;

@@ -1,22 +1,27 @@
 import React from "react";
+import propTypes from "prop-types";
 
+const Card = (props) => {
+    return (
+            <div className="card-group ">               
+                    <div className="card-body card">
+                        <img src={props.image} className="card-img-top rounded cardfoto" alt="New Picture"/>
+                        <h5 className="card-title">{props.title}</h5>
+                        <p className="card-text">{props.text}.</p>
+                        <a href={props.buttonUrl} target="_blank" className="btn btn-dark mt-auto align-self-center">More</a>
+                    </div>
+            </div>        
+        
+    );
+};
 
-//include images into your bundle
+Card.propTypes = {
+    image: propTypes.string,
+    title: propTypes.string,
+    text: propTypes.string,
+    buttonUrl: propTypes.string,
 
-//create your first component
-const Card = () => {
-	return (
-    <div className="col text-start mb-4">
-      <div className="card h-100 p-2">
-        <img src="https://img.freepik.com/vector-gratis/plantilla-poster-evento-musical-formas-coloridas_1361-1591.jpg?w=2000" className="card-img-top" alt="..."/>
-        <div className="card-body">
-          <h5 className="card-title">Earth</h5>
-          <p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-          <a href="#" className="btn btn-primary">Watch Live</a>
-        </div>
-      </div>
-    </div>
-	);
 };
 
 export default Card;
+ 

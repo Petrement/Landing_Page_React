@@ -1,14 +1,37 @@
-.jumbotron{
-    height:200px;
+body {
+    background-color: burlywood;
 }
-/* 
 
-    You can write your own styles here...
+.jumbotron {
+    background-size: cover;
+    height: 50px;
     
-    
-    ...Or you can use the import command to include 
-    other sylesheets into your bunde as well, e.j:
-    
-    import 'relative/path/to/stylesheet.scss';
+}
 
-*/
+.textjmb, .textjmb2 {
+    text-shadow: 1px 1px 2px rgb(255, 255, 255);  
+    font-size: 25px; 
+    color: rgb(0, 0, 0);
+    font-family: 'Curier', cursive;
+       
+}
+
+.textjmb{
+    margin-top: 160px;
+    text-align: center;
+}
+
+.textjmb2{
+    margin-bottom: 20px;
+    
+}
+
+.logogb {
+    margin: 10px;
+    
+}
+
+.card-title{
+    margin-top: 10px;
+    text-align: center;
+}
